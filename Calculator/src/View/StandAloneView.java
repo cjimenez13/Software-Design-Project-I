@@ -1,5 +1,9 @@
 package View;
 
+import DataAccessObject.OperationDTO;
+import DataAccessObject.OperatorsDTO;
+import DataAccessObject.ResultDTO;
+
 public class StandAloneView extends AStandAloneView {
     private static IView _Instance = null;
     public StandAloneView() {
@@ -102,4 +106,14 @@ public class StandAloneView extends AStandAloneView {
     private javax.swing.JTextField jTextField2;
     private javax.swing.JPanel panel_Calculator;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public ResultDTO doOperation(OperatorsDTO pOperatorsDTO) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setOperation(OperationDTO pOperation) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
