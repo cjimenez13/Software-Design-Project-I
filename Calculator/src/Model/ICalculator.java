@@ -6,5 +6,6 @@ public interface ICalculator {
     public abstract ResultDTO calculate(OperatorsDTO pOperator);
     //public static ICalculator getInstance(){return null;};
     public static void createInstance(){};
+    public int getQuantOperators();
 
 }

@@ -4,7 +4,9 @@ import DataAccessObject.OperatorsDTO;
 
 public class Dividier extends ACalculator {
     private static ICalculator _Instance = null;
-    private Dividier() {}
+    private Dividier() {
+        setNumOperators(2);
+    }
 
     private static void createInstance(){
         if (_Instance == null){
@@ -19,6 +21,10 @@ public class Dividier extends ACalculator {
     public ResultDTO calculate(OperatorsDTO pOperator) {
         float result = pOperator.getNum1() / pOperator.getNum2();
         return new ResultDTO(String.valueOf(result));
+    }
+    @Override
+    public int getQuantOperators() {
+        return getNumOperators();
     }
 
 }

@@ -4,7 +4,9 @@ import DataAccessObject.OperatorsDTO;
 
 public class HexadecimalConverter extends ACalculator {
     private static ICalculator _Instance = null;
-    private HexadecimalConverter(){}
+    private HexadecimalConverter(){
+        setNumOperators(1);
+    }
     private static void createInstance(){
         if (_Instance == null){
             _Instance = new HexadecimalConverter(){};
@@ -18,6 +20,10 @@ public class HexadecimalConverter extends ACalculator {
     public ResultDTO calculate(OperatorsDTO pOperator) {
         String result = Integer.toHexString(pOperator.getNum1());
         return new ResultDTO(result);
+    }
+    @Override
+    public int getQuantOperators() {
+        return getNumOperators();
     }
 
 }

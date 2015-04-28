@@ -9,7 +9,7 @@ public class SubstracterCreator extends FactoryOperators {
     }
 
     @Override
-    protected ICalculator createOperator(String pOperatorType) {
+    protected ICalculator createOperator() {
         return Substracter.getInstance();
     }
 

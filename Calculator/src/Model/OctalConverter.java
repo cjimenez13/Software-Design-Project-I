@@ -4,7 +4,9 @@ import DataAccessObject.OperatorsDTO;
 
 public class OctalConverter extends ACalculator {
     private static ICalculator _Instance = null;
-    private OctalConverter() {}
+    private OctalConverter() {
+        setNumOperators(1);
+    }
     private static void createInstance(){
         if (_Instance == null){
            _Instance = new OctalConverter();
@@ -18,6 +20,10 @@ public class OctalConverter extends ACalculator {
     public ResultDTO calculate(OperatorsDTO pOperator) {
         String result = Integer.toOctalString(pOperator.getNum1());
         return new ResultDTO(result);
+    }
+    @Override
+    public int getQuantOperators() {
+        return getNumOperators();
     }
 
 }

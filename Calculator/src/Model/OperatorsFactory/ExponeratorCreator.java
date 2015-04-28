@@ -11,7 +11,7 @@ public class ExponeratorCreator extends FactoryOperators {
     }
 
     @Override
-    protected ICalculator createOperator(String pOperatorType) {
+    protected ICalculator createOperator() {
         return Exponerator.getInstance();
     }
 

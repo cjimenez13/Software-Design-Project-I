@@ -6,12 +6,12 @@ public abstract class FactoryOperators implements IFactoryOperators {
     private static IFactoryOperators _Instance;
     public FactoryOperators() {}
     @Override
-    public ICalculator getOperator(String pOperatorType){
-        ICalculator calc = createOperator(pOperatorType);
+    public ICalculator getOperator(){
+        ICalculator calc = createOperator();
         return calc;
         
     }
-    protected abstract ICalculator createOperator(String pOperatorType);
+    protected abstract ICalculator createOperator();
 	
 
 }

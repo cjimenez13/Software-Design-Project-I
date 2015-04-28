@@ -6,6 +6,6 @@ public interface IFactoryOperators {
 
 	public static IFactoryOperators getInstance(){return null;};
 
-	public ICalculator getOperator(String pOperatorType) throws Exception;
+	public ICalculator getOperator() throws Exception;
 
 }

@@ -4,10 +4,10 @@ import Model.BinaryConverter;
 import Model.ICalculator;
 
 public class BinaryConverterCreator extends FactoryOperators {
-    private BinaryConverterCreator() {}
+    public BinaryConverterCreator() {}
     
     @Override
-    protected ICalculator createOperator(String pOperatorType) {
+    protected ICalculator createOperator() {
         return BinaryConverter.getInstance();
     }
 

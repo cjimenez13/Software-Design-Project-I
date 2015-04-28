@@ -6,7 +6,7 @@ public class AdderCreator extends FactoryOperators {
     public AdderCreator() {}
 
     @Override
-    protected ICalculator createOperator(String pOperatorType) {
+    protected ICalculator createOperator() {
         return Adder.getInstance();
     }
 }

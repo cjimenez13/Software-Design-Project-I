@@ -5,10 +5,14 @@ import DataAccessObject.ResultDTO;
 import DataAccessObject.OperatorsDTO;
 import DataAccessObject.OperationDTO;
 import Controller.AControllerStandAlone;
+import DataAccessObject.QuantOperatorsDTO;
+import Model.Context;
+import Model.IContext;
 import java.util.*;
 
 public class ControllerStandAlone extends AControllerStandAlone {
     private static IController  _Instance = null;
+    private IContext context = Context.getInstance();
     
     public ControllerStandAlone() {}
 
@@ -24,12 +28,17 @@ public class ControllerStandAlone extends AControllerStandAlone {
 	
     @Override
     public void setOperation(OperationDTO pOperationDTO) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        context.setContext(pOperationDTO);
     }
 
     @Override
     public ResultDTO doOperation(OperatorsDTO pOperatorsDTO) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return context.executeCalculate(pOperatorsDTO);
+    }
+
+    @Override
+    public QuantOperatorsDTO getQuantOperators() {
+        return context.getQuantOperators();
     }
 
 }

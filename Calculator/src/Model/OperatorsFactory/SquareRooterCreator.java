@@ -9,7 +9,7 @@ public class SquareRooterCreator extends FactoryOperators {
     }
 
     @Override
-    protected ICalculator createOperator(String pOperatorType) {
+    protected ICalculator createOperator() {
         return SquareRooter.getInstance();
     }
     

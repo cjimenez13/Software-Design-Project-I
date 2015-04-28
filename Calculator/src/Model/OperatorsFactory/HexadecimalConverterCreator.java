@@ -8,7 +8,7 @@ public class HexadecimalConverterCreator extends FactoryOperators {
     public HexadecimalConverterCreator() {}
 
     @Override
-    protected ICalculator createOperator(String pOperatorType) {
+    protected ICalculator createOperator() {
         return HexadecimalConverter.getInstance();
     }
 

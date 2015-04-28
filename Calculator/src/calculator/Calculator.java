@@ -6,6 +6,7 @@ import Model.Adder;
 import Model.ICalculator;
 import Model.OperatorsFactory.FactoryOperators;
 import Model.OperatorsFactory.OperatorsMaker;
+import View.ConsoleView;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -32,8 +33,10 @@ public class Calculator {
         
         FactoryOperators fo;
         fo = (FactoryOperators) Class.forName("Model.OperatorsFactory."+clase).newInstance();
-        ICalculator c = fo.getOperator("");
+        ICalculator c = fo.getOperator();
         System.out.println(c.calculate(new OperatorsDTO(2,2)).getResult());
+        ConsoleView a = (ConsoleView) ConsoleView.getInstance();
+        a.run();
         
         
     }

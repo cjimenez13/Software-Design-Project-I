@@ -4,7 +4,9 @@ import DataAccessObject.OperatorsDTO;
 
 public class BinaryConverter extends ACalculator {
     private static ICalculator _Instance = null;
-    private BinaryConverter() {    }
+    private BinaryConverter() { 
+        setNumOperators(1);
+    }
     private static void createInstance(){
         if (_Instance == null){
             _Instance = new BinaryConverter();
@@ -19,5 +21,8 @@ public class BinaryConverter extends ACalculator {
         String result = Integer.toBinaryString(pOperator.getNum1());
         return new ResultDTO(result);
     }
-
+    @Override
+    public int getQuantOperators() {
+        return getNumOperators();
+    }
 }
