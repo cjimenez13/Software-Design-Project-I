@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/calculator/Calculator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/View/AConsoleView.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/View/IView.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Controller/ControllerStandAlone.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Controller/ControllerConsole.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Controller/AControllerStandAlone.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Controller/IController.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/Context.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/ICalculator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/Adder.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/DataAccessObject/OperatorsDTO.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/DataAccessObject/OperationDTO.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/DataAccessObject/ResultDTO.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/ACalculator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/BinaryConverter.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/Dividier.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/Exponerator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/HexadecimalConverter.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/Multiplier.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/IContext.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OctalConverter.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/SquareRooter.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/Substracter.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/AdderCreator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/BinaryConverterCreator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/DividierCreator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/ExponeratorCreator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/IFactoryOperators.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/HexadecimalConverterCreator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/MultiplierCreator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/OctalConverterCreator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/SquareRooterCreator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/SubstracterCreator.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/OperatorsMaker.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Model/OperatorsFactory/FactoryOperators.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/View/AStandAloneView.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/Controller/AControllerConsole.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/View/StandAloneView.java</file>
+            <file>file:/C:/Users/Christian/Documents/NetBeansProjects/Calculator/src/View/ConsoleView.java</file>
+        </group>
+    </open-files>
+</project-private>
