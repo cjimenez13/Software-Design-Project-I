@@ -36,16 +36,38 @@ public class ConsoleView extends AConsoleView {
     @Override
     public void run() {
         int seleccion = 0;
+        int salir = createMenu();
         do{
+            //seleccion = createMenu();
             createMenu();
-            seleccion = Integer.valueOf(getConsoleString());
-            String op = Operators.values()[seleccion-1].toString();
-            System.out.println(op);
-            setOperation(new OperationDTO(op));
+            seleccion = getNumber();
+            if(!(0<seleccion && seleccion<salir))continue;
+            setOperation(new OperationDTO(getOperator(seleccion)));
             int cantOperators = controller.getQuantOperators().getNumOperators();
-            System.out.println("Resultado: "+executeOperation(cantOperators).getResult());
+            showResult(executeOperation(cantOperators));
             getConsoleString();
-        }while(seleccion!=10);
+        }while(seleccion!=salir);
+    }
+    private String getOperator(int pSelection){
+        return Operations.values()[pSelection-1].toString();
+    }
+    private void showResult(ResultDTO pResultDTO){
+        System.out.println("Resultado: "+pResultDTO.getResult());
+    }
+    
+    @Override
+    protected int getNumber(){
+        int seleccion;
+        while(true){
+            try{
+                seleccion = Integer.valueOf(getConsoleString());
+                break;
+            }catch(NumberFormatException  e){
+                System.out.println("Numero invalido");
+                continue;
+            }
+        }
+        return seleccion;
     }
     
     
@@ -53,14 +75,14 @@ public class ConsoleView extends AConsoleView {
         int num1;
         if(pCantOperators==1){
             System.out.print("Insertar numero: ");
-            num1 = Integer.valueOf(getConsoleString());
+            num1 = getNumber();
             return doOperation(new OperatorsDTO(num1));
         }else{
             int num2;
             System.out.print("Insertar numero 1: ");
-            num1 = Integer.valueOf(getConsoleString());
+            num1 = getNumber();
             System.out.print("Insertar numero 2: ");
-            num2 = Integer.valueOf(getConsoleString());
+            num2 = getNumber();
             return doOperation(new OperatorsDTO(num1, num2));
         }
     }
@@ -75,22 +97,7 @@ public class ConsoleView extends AConsoleView {
         return "";
     }
 
-    @Override
-    public void createMenu() {
-        String menu = "\t\t\t\tCalculadora Basica\n"
-                + "\t1.Suma\n"
-                + "\t2.Resta\n"
-                + "\t3.Division\n"
-                + "\t4.Multiplicacion\n"
-                + "\t5.Elevar\n"
-                + "\t6.Raiz Cuadrada\n"
-                + "\t7.Conversion a Binario\n"
-                + "\t8.Conversion a Octal\n"
-                + "\t9.Conversion a Hexadecimal\n"
-                + "\t10.Salir\n"
-                + "\tIngrese seleccion: ";
-        System.out.print(menu);
-    }
+
     
     @Override
     public ResultDTO doOperation(OperatorsDTO pOperatorsDTO) {
@@ -105,5 +112,18 @@ public class ConsoleView extends AConsoleView {
     @Override
     public void selectOption(String pOption) {
         
+    }
+
+    @Override
+    public int createMenu() {
+        String menu = "\t\t\t\tCalculadora Basica\n";
+        String[] operations = Operations.getOperations();
+        int i = 0;
+        for(i=0;i<operations.length;i++){
+            menu += "\t"+(i+1)+"."+operations[i]+"\n";
+        }
+        menu+="\t"+(i+1)+".Salir\n \tIngrese seleccion: ";
+        System.out.print(menu);
+        return i+1;
     }
 }

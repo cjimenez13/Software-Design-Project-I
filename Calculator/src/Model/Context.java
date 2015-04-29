@@ -35,6 +35,7 @@ public class Context implements IContext {
         }
         try {
             System.out.println(clase);
+            
             FactoryOperators f =(FactoryOperators) Class.forName("Model.OperatorsFactory."+clase).newInstance();
             _Strategy = f.getOperator();
         } catch (ClassNotFoundException ex) {

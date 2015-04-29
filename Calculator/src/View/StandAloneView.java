@@ -5,11 +5,13 @@ import Controller.IController;
 import DataAccessObject.OperationDTO;
 import DataAccessObject.OperatorsDTO;
 import DataAccessObject.ResultDTO;
+import javax.swing.DefaultComboBoxModel;
 
 public class StandAloneView extends AStandAloneView {
     private final IController _Controller = ControllerStandAlone.getInstance();
     public StandAloneView() {
         initComponents();
+        uploadOperators();
         updateOperation();
     }
 
@@ -56,7 +58,6 @@ public class StandAloneView extends AStandAloneView {
 
         cBox_Operator.setBackground(new java.awt.Color(0, 153, 153));
         cBox_Operator.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        cBox_Operator.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Suma", "Resta", "Multiplicacion", "Division", "Elevar", "RaizCuadrada", "ConversionBinaria", "ConversionOctal", "ConversionHexadecimal" }));
         cBox_Operator.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cBox_OperatorActionPerformed(evt);
@@ -87,8 +88,8 @@ public class StandAloneView extends AStandAloneView {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_CalculatorLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(cBox_Operator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(95, 95, 95))
+                .addComponent(cBox_Operator, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(87, 87, 87))
         );
         panel_CalculatorLayout.setVerticalGroup(
             panel_CalculatorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -135,6 +136,9 @@ public class StandAloneView extends AStandAloneView {
         // TODO add your handling code here:
         updateOperation();
     }//GEN-LAST:event_cBox_OperatorActionPerformed
+    private void uploadOperators(){
+        cBox_Operator.setModel(new DefaultComboBoxModel<>(Operations.values()));
+    }
     private void cleanCalculator(){
         spinner_Num1.setValue(new Integer(1));
         spinner_Num2.setValue(new Integer(1));
@@ -148,7 +152,7 @@ public class StandAloneView extends AStandAloneView {
         int quantNumbers = _Controller.getQuantOperators().getNumOperators();
         showQuantFields(quantNumbers);
     }
-    private OperatorsDTO getNumbers(int pQuantNumbers){
+    public OperatorsDTO getNumbers(int pQuantNumbers){
         int num1 = Integer.valueOf(spinner_Num1.getValue().toString());
         int num2 = Integer.valueOf(spinner_Num2.getValue().toString());
         if (pQuantNumbers == 1){
@@ -181,7 +185,7 @@ public class StandAloneView extends AStandAloneView {
         }
         panel_Calculator.updateUI();
     }
-    private void showResult(ResultDTO pResultDTO){
+    public void showResult(ResultDTO pResultDTO){
         lbl_Result.setText(pResultDTO.getResult());
     }
     public static void main(String args[]) {
@@ -214,8 +218,5 @@ public class StandAloneView extends AStandAloneView {
         _Controller.setOperation(pOperation);
     }
 
-    @Override
-    public void run() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+
 }

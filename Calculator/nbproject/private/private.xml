@@ -3,11 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/JuanCarlos/Documents/GitHub/Software-Design-Project-I/Calculator/src/View/IView.java</file>
-            <file>file:/C:/Users/JuanCarlos/Documents/GitHub/Software-Design-Project-I/Calculator/src/calculator/Calculator.java</file>
-            <file>file:/C:/Users/JuanCarlos/Documents/GitHub/Software-Design-Project-I/Calculator/src/Model/OperatorsFactory/AdderCreator.java</file>
-            <file>file:/C:/Users/JuanCarlos/Documents/GitHub/Software-Design-Project-I/Calculator/src/Model/OperatorsFactory/FactoryOperators.java</file>
-            <file>file:/C:/Users/JuanCarlos/Documents/GitHub/Software-Design-Project-I/Calculator/src/Model/OperatorsFactory/OperatorsMaker.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/ConsoleView.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/IView.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/IConsoleView.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/Dividier.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/Operators.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/calculator/Calculator.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Controller/ControllerStandAlone.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/AConsoleView.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/StandAloneView.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/calculator/operationsFile.properties</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/AStandAloneView.java</file>
         </group>
     </open-files>
 </project-private>
