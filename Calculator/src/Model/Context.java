@@ -1,4 +1,5 @@
 package Model;
+import Model.Utilities.PropertiesReader;
 import DataAccessObject.OperationDTO;
 import DataAccessObject.OperatorsDTO;
 import DataAccessObject.QuantOperatorsDTO;
@@ -29,13 +30,12 @@ public class Context implements IContext {
         String operation = pOperationDTO.getOperation();
         String clase ="";
         try {
-            clase = ReaderHandler.getInstance().getProperty(operation);
+            PropertiesReader.getInstance().loadProperties("src\\calculator\\operationsFile.properties");
+            clase = PropertiesReader.getInstance().getProperty(operation);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Context.class.getName()).log(Level.SEVERE, null, ex);
         }
-        try {
-            System.out.println(clase);
-            
+        try {            
             FactoryOperators f =(FactoryOperators) Class.forName("Model.OperatorsFactory."+clase).newInstance();
             _Strategy = f.getOperator();
         } catch (ClassNotFoundException ex) {

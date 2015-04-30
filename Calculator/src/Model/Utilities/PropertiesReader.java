@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Model;
+package Model.Utilities;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -17,38 +17,47 @@ import java.util.logging.Logger;
  *
  * @author JuanCarlos
  */
-public class ReaderHandler {
-    private static ReaderHandler _Instance = null;
+public class PropertiesReader implements IPropertiesReader{
+    private static PropertiesReader _Instance = null;
     Properties prop = new Properties();
     InputStream input = null;
     
     private static void createInstance() throws FileNotFoundException{
         if (_Instance == null){
-            _Instance = new ReaderHandler();
+            _Instance = new PropertiesReader();
         } 
     }
-    public static synchronized ReaderHandler getInstance() throws FileNotFoundException{
+    public static synchronized IPropertiesReader getInstance() throws FileNotFoundException{
         createInstance();
         return _Instance;
     }
     
-    public ReaderHandler() throws FileNotFoundException{
-        input=new FileInputStream("src\\calculator\\operationsFile.properties");
+    private PropertiesReader(){}
+    @Override
+    public void loadProperties(String pFilePath){
+        setInput(pFilePath);
+        loadProperties();
+    }
+    private boolean setInput(String pFilePath){
+        try { 
+            input=new FileInputStream(pFilePath);
+            
+            return true;
+        } catch (FileNotFoundException ex) {
+            return false;
+        }
+    }
+    private void loadProperties(){
         try {
             prop.load(input);
         } catch (IOException ex) {
-            Logger.getLogger(ReaderHandler.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PropertiesReader.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
-    public Properties getProp() {
-        return prop;
-    }
-
-    public void setProp(Properties prop) {
-        this.prop = prop;
-    }
     
+
+    
+    @Override
     public String getProperty(String pOperation){
         return prop.getProperty(pOperation);
     }
