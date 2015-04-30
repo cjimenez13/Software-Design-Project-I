@@ -5,9 +5,10 @@ import Controller.IController;
 import DataAccessObject.OperationDTO;
 import DataAccessObject.OperatorsDTO;
 import DataAccessObject.ResultDTO;
+import Resources.FeaturesStandAlone;
 import javax.swing.DefaultComboBoxModel;
 
-public class StandAloneView extends AStandAloneView {
+public class StandAloneView extends javax.swing.JFrame implements IStandAloneView {
     private final IController _Controller = ControllerStandAlone.getInstance();
     public StandAloneView() {
         initComponents();
@@ -137,7 +138,7 @@ public class StandAloneView extends AStandAloneView {
         updateOperation();
     }//GEN-LAST:event_cBox_OperatorActionPerformed
     private void uploadOperators(){
-        cBox_Operator.setModel(new DefaultComboBoxModel<>(Operations.values()));
+        cBox_Operator.setModel(new DefaultComboBoxModel<>(_Controller.getFeatures().getFeatures()));        
     }
     private void cleanCalculator(){
         spinner_Num1.setValue(new Integer(1));

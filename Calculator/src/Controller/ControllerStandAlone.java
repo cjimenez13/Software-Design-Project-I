@@ -4,16 +4,15 @@ package Controller;
 import DataAccessObject.ResultDTO;
 import DataAccessObject.OperatorsDTO;
 import DataAccessObject.OperationDTO;
-import Controller.AControllerStandAlone;
+import DataAccessObject.FeaturesDTO;
 import DataAccessObject.QuantOperatorsDTO;
 import Model.Context;
 import Model.IContext;
-import java.util.*;
+import Resources.FeaturesStandAlone;
 
-public class ControllerStandAlone extends AControllerStandAlone {
+public class ControllerStandAlone implements IControllerStandAlone {
     private static IController  _Instance = null;
     private IContext context = Context.getInstance();
-    
     public ControllerStandAlone() {}
 
     private static void createInstance(){
@@ -39,6 +38,11 @@ public class ControllerStandAlone extends AControllerStandAlone {
     @Override
     public QuantOperatorsDTO getQuantOperators() {
         return context.getQuantOperators();
+    }
+    
+    @Override
+    public FeaturesDTO getFeatures() {
+        return new FeaturesDTO(FeaturesStandAlone.getOperations());
     }
 
 }

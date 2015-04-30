@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+package Resources;
 
 import java.util.Arrays;
 
@@ -11,10 +11,10 @@ import java.util.Arrays;
  *
  * @author JuanCarlos
  */
-public enum Operations {
+public enum FeaturesConsole{
     Suma,Resta,Division,Multiplicacion,Elevar,RaizCuadrada,ConversionBinaria,ConversionOctal,ConversionHexadecimal;
     public static String[] getOperations(){
-        String valueStr= Arrays.toString(Operations.values());
+        String valueStr= Arrays.toString(FeaturesConsole.values());
         return valueStr.substring(1, valueStr.length()-1).replace(" ","").split(",");
     }
 }

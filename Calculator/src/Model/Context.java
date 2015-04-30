@@ -30,7 +30,7 @@ public class Context implements IContext {
         String operation = pOperationDTO.getOperation();
         String clase ="";
         try {
-            PropertiesReader.getInstance().loadProperties("src\\calculator\\operationsFile.properties");
+            PropertiesReader.getInstance().loadProperties("src\\Resources\\operationsFile.properties");
             clase = PropertiesReader.getInstance().getProperty(operation);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Context.class.getName()).log(Level.SEVERE, null, ex);

@@ -1,6 +1,7 @@
 package Controller;
 
 
+import DataAccessObject.FeaturesDTO;
 import DataAccessObject.ResultDTO;
 import DataAccessObject.OperatorsDTO;
 import DataAccessObject.OperationDTO;
@@ -14,5 +15,6 @@ public interface IController {
     public ResultDTO doOperation(OperatorsDTO pOperatorsDTO);
     
     public QuantOperatorsDTO getQuantOperators();
+    public FeaturesDTO getFeatures();
 
 }

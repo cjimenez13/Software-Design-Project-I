@@ -1,6 +1,7 @@
 
 package View;
 
+import Resources.FeaturesConsole;
 import Controller.ControllerConsole;
 import Controller.IController;
 import DataAccessObject.OperationDTO;
@@ -13,7 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-public class ConsoleView extends AConsoleView {
+public class ConsoleView implements IConsoleView {
     private IController controller = null;
     private static IView _Instance = null;
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -36,10 +37,10 @@ public class ConsoleView extends AConsoleView {
     @Override
     public void run() {
         int seleccion = 0;
-        int salir = createMenu();
+        int salir;
         do{
             //seleccion = createMenu();
-            createMenu();
+            salir = createMenu();
             seleccion = getNumber();
             if(!(0<seleccion && seleccion<salir))continue;
             setOperation(new OperationDTO(getOperator(seleccion)));
@@ -49,14 +50,14 @@ public class ConsoleView extends AConsoleView {
         }while(seleccion!=salir);
     }
     private String getOperator(int pSelection){
-        return Operations.values()[pSelection-1].toString();
+        return controller.getFeatures().getFeatures()[pSelection-1];
     }
     private void showResult(ResultDTO pResultDTO){
         System.out.println("Resultado: "+pResultDTO.getResult());
     }
     
-    @Override
-    protected int getNumber(){
+    
+    private int getNumber(){
         int seleccion;
         while(true){
             try{
@@ -117,7 +118,7 @@ public class ConsoleView extends AConsoleView {
     @Override
     public int createMenu() {
         String menu = "\t\t\t\tCalculadora Basica\n";
-        String[] operations = Operations.getOperations();
+        String[] operations = controller.getFeatures().getFeatures();
         int i = 0;
         for(i=0;i<operations.length;i++){
             menu += "\t"+(i+1)+"."+operations[i]+"\n";

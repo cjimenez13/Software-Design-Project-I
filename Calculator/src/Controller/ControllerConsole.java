@@ -4,13 +4,13 @@ package Controller;
 import DataAccessObject.ResultDTO;
 import DataAccessObject.OperatorsDTO;
 import DataAccessObject.OperationDTO;
-import Controller.AControllerConsole;
+import DataAccessObject.FeaturesDTO;
 import DataAccessObject.QuantOperatorsDTO;
 import Model.Context;
 import Model.IContext;
-import java.util.*;
+import Resources.FeaturesConsole;
 
-public class ControllerConsole extends AControllerConsole {
+public class ControllerConsole implements IControllerConsole {
     private static IController  _Instance = null;
     private IContext context;
     
@@ -41,6 +41,11 @@ public class ControllerConsole extends AControllerConsole {
     @Override
     public QuantOperatorsDTO getQuantOperators() {
         return context.getQuantOperators();
+    }
+
+    @Override
+    public FeaturesDTO getFeatures() {
+        return new FeaturesDTO(FeaturesConsole.getOperations());
     }
 
 }
