@@ -5,7 +5,6 @@ import Model.ACalculator;
 import Model.Adder;
 import Model.ICalculator;
 import Model.OperatorsFactory.FactoryOperators;
-import Model.OperatorsFactory.OperatorsMaker;
 import View.ConsoleView;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

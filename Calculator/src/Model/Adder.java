@@ -25,9 +25,5 @@ public class Adder extends ACalculator {
         return new ResultDTO(String.valueOf(result));
     }
 
-    @Override
-    public int getQuantOperators() {
-        return getNumOperators();
-    }
 
 }

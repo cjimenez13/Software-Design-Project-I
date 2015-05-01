@@ -21,9 +21,6 @@ public class HexadecimalConverter extends ACalculator {
         String result = Integer.toHexString(pOperator.getNum1());
         return new ResultDTO(result);
     }
-    @Override
-    public int getQuantOperators() {
-        return getNumOperators();
-    }
+
 
 }

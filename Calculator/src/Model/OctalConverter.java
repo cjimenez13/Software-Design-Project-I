@@ -21,9 +21,6 @@ public class OctalConverter extends ACalculator {
         String result = Integer.toOctalString(pOperator.getNum1());
         return new ResultDTO(result);
     }
-    @Override
-    public int getQuantOperators() {
-        return getNumOperators();
-    }
+    
 
 }

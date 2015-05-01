@@ -22,9 +22,6 @@ public class Dividier extends ACalculator {
         float result = pOperator.getNum1() / pOperator.getNum2();
         return new ResultDTO(String.valueOf(result));
     }
-    @Override
-    public int getQuantOperators() {
-        return getNumOperators();
-    }
+
 
 }

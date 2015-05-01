@@ -22,9 +22,6 @@ public class Exponerator extends ACalculator {
         int result = (int)Math.pow(pOperator.getNum1(),pOperator.getNum2());
         return new ResultDTO(String.valueOf(result));
     }
-    @Override
-    public int getQuantOperators() {
-        return getNumOperators();
-    }
+
 
 }

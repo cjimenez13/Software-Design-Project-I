@@ -21,9 +21,6 @@ public class SquareRooter extends ACalculator {
         double result = Math.pow(pOperator.getNum1(),(1/pOperator.getNum2()));
         return new ResultDTO(String.valueOf(result));
     }
-    @Override
-    public int getQuantOperators() {
-        return getNumOperators();
-    }
+
 
 }

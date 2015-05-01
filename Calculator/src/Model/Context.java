@@ -27,6 +27,7 @@ public class Context implements IContext {
     
     @Override
     public void setContext(OperationDTO pOperationDTO) {
+        
         String operation = pOperationDTO.getOperation();
         String clase ="";
         try {
@@ -55,7 +56,7 @@ public class Context implements IContext {
 
     @Override
     public QuantOperatorsDTO getQuantOperators() {
-        return new QuantOperatorsDTO(_Strategy.getQuantOperators());
+        return new QuantOperatorsDTO(_Strategy.getNumOperators());
     }
 
     

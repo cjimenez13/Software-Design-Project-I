@@ -21,8 +21,4 @@ public class BinaryConverter extends ACalculator {
         String result = Integer.toBinaryString(pOperator.getNum1());
         return new ResultDTO(result);
     }
-    @Override
-    public int getQuantOperators() {
-        return getNumOperators();
-    }
 }

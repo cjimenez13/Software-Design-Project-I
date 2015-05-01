@@ -153,6 +153,7 @@ public class StandAloneView extends javax.swing.JFrame implements IStandAloneVie
         int quantNumbers = _Controller.getQuantOperators().getNumOperators();
         showQuantFields(quantNumbers);
     }
+    @Override
     public OperatorsDTO getNumbers(int pQuantNumbers){
         int num1 = Integer.valueOf(spinner_Num1.getValue().toString());
         int num2 = Integer.valueOf(spinner_Num2.getValue().toString());

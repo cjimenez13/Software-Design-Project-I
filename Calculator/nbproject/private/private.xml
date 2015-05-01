@@ -3,27 +3,40 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/IView.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/HexadecimalConverter.java</file>
             <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/IStandAloneView.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/OperatorsFactory/OperatorsMaker.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Controller/AControllerStandAlone.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/OperatorsFactory/SquareRooterCreator.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/AStandAloneView.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/OctalConverter.java</file>
             <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Controller/IController.java</file>
             <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/Multiplier.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/SquareRooter.java</file>
             <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/OperatorsFactory/FactoryOperators.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Resources/FeaturesStandAlone.java</file>
             <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/ConsoleView.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/IConsoleView.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/OperatorsFactory/HexadecimalConverterCreator.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/Context.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Controller/AControllerConsole.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/ReaderHandler.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/calculator/Calculator.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/ACalculator.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/OperatorsFactory/IFactoryOperators.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/Substracter.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/Dividier.java</file>
             <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Controller/ControllerStandAlone.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/AConsoleView.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/Operations.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/ICalculator.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Resources/FeaturesConsole.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/Exponerator.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/DataAccessObject/QuantOperatorsDTO.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/Adder.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/IContext.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/IView.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Controller/IControllerStandAlone.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Controller/IControllerConsole.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/OperatorsFactory/SquareRooterCreator.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Controller/ControllerConsole.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/OperatorsFactory/HexadecimalConverterCreator.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/IConsoleView.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/Utilities/PropertiesReader.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/Utilities/IPropertiesReader.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/Context.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/DataAccessObject/FeaturesDTO.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/Model/BinaryConverter.java</file>
+            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/calculator/Calculator.java</file>
             <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/View/StandAloneView.java</file>
-            <file>file:/C:/Users/Christian/OneDrive/Documents/Ing%20en%20Sistemas/V%20Semestre/Diseño%20de%20Software/Proyectos/Calculator/Calculator/src/calculator/operationsFile.properties</file>
         </group>
     </open-files>
 </project-private>
