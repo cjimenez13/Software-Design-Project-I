@@ -39,15 +39,20 @@ public class ConsoleView implements IConsoleView {
         int seleccion = 0;
         int salir;
         do{
-            //seleccion = createMenu();
             salir = createMenu();
             seleccion = getNumber();
-            if(!(0<seleccion && seleccion<salir))continue;
+            if(!validateSelection(seleccion, salir))continue;
             setOperation(new OperationDTO(getOperator(seleccion)));
             int cantOperators = controller.getQuantOperators().getNumOperators();
             showResult(executeOperation(cantOperators));
             getConsoleString();
         }while(seleccion!=salir);
+    }
+    
+    
+    private boolean validateSelection(int pSelection,int pMax){
+        if(0<pSelection && pSelection<pMax)return true;
+        return false;
     }
     private String getOperator(int pSelection){
         return controller.getFeatures().getFeatures()[pSelection-1];
@@ -62,9 +67,13 @@ public class ConsoleView implements IConsoleView {
         while(true){
             try{
                 seleccion = Integer.valueOf(getConsoleString());
+                if(seleccion<=0){
+                    System.out.print("Numero Invalido. Inserte numero nuevamente:");
+                    continue;
+                }
                 break;
             }catch(NumberFormatException  e){
-                System.out.println("Numero invalido");
+                System.out.print("Numero invalido");
                 continue;
             }
         }
